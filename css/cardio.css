@@ -116,7 +116,14 @@ header {
 	background: rgba(28, 36, 65, 0.93);
 	background: url('../img/header.jpg');
 	background-size: cover;
+	/* position: absolute; */
+	height: 100%;
 }
+/* .parallax-window {
+		height: 80%;
+		background-size: cover;s
+    background: transparent;
+} */
 
 header .table {
 	display: table;
@@ -289,12 +296,13 @@ section {
 	content: ' ';
 	position: absolute;
 	z-index: 1;
-	top: -80px;
+	top: -93px;
 	left: 0;
 	width: 0;
 	height: 0;
-	border-top: 80px solid transparent;
-	border-right: 30px solid white;
+	border-top: 3vw solid transparent;
+	border-right: 100vw solid white;
+	height: 10vh;
 }
 
 .cut-bottom {
@@ -322,11 +330,11 @@ section {
 }
 
 .intro-table-first {
-	background-image: url('../img/table-1.jpg');
+	background: rgb(203, 61, 52, 0.67);
 }
 
 .intro-table-second {
-	background-image: url('../img/table-2.jpg');
+	background: rgba(75, 147, 73, 0.67);
 }
 
 /* .intro-table-hover {
@@ -348,7 +356,8 @@ section {
 } */
 
 .intro-table-third {
-	background-image: url('../img/table-3.jpg');
+	/* background-image: url('../img/table-3.jpg'); */
+	background: rgb(55, 155, 221, 0.67);
 }
 
 .intro-table-hover .expand {
@@ -521,6 +530,20 @@ section {
 	transform: scale(1);
 }
 
+.my-work{
+	padding: 3.2em 4.2em;
+  margin: 80px 0;
+  padding-bottom: 60px;
+  background: white;
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.07);
+}
+ol >li{
+	counter-increment: countername;
+
+}
+ol > li::before{
+	content: countername;
+}
 .team {
 	margin: 80px 0;
 	padding-bottom: 60px;
@@ -789,9 +812,10 @@ footer .social-footer li:hover a {
 	position: relative;
 	padding: 45px 30px;
 	text-align: center;
-	background: url('../img/popup.jpg');
+	background: rgba(71, 158, 255, 0.62);
 	box-shadow: none;
 	border-radius: 2px;
+	line-height: 1.5em;
 }
 
 .modal-popup a.close-link {
@@ -997,6 +1021,7 @@ footer .social-footer li:hover a {
 
 .regular {
 	font-weight: 400;
+	line-height: 1.5em;
 }
 
 .bold {
@@ -1114,4 +1139,10 @@ footer .social-footer li:hover a {
 	.pricings .pricing .box-second {
 		padding-top: 0;
 	}
+}
+
+/* FontAwesome */
+.fa-custom {
+    font-size: 3em;
+    color: #6ca8fe;
 }
