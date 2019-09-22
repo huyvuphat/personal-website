@@ -4,7 +4,14 @@ jQuery(function($) {
 
 	var owlPricing;
 	var ratio = 2;
-
+ function resetCut(){
+	 $('section .cut').each(function() {
+		 if ($(this).hasClass('cut-top'))
+			 $(this).css('border-right-width', $(this).parent().width() + "px");
+		 else if ($(this).hasClass('cut-bottom'))
+			 $(this).css('border-left-width', $(this).parent().width() + "px");
+	 });
+ }
 	// Window Load
 	$(window).load(function() {
 		// Preloader
@@ -24,26 +31,31 @@ jQuery(function($) {
 		}
 
 		$('header').height($(window).height() + 80);
-		$('section .cut').each(function() {
-			if ($(this).hasClass('cut-top'))
-				$(this).css('border-right-width', $(this).parent().width() + "px");
-			else if ($(this).hasClass('cut-bottom'))
-				$(this).css('border-left-width', $(this).parent().width() + "px");
-		});
+		resetCut();
 
 		// Sliders Init
-		$('.owl-schedule').owlCarousel({
-			singleItem: true,
-			pagination: true
+		// $('.owl-schedule').owlCarousel({
+		// 	singleItem: true,
+		// 	pagination: true
+		// });
+		$('.owl-carousel').owlCarousel({
+			loop:true,
+			margin:30,
+
+      items: 2
+
+
 		});
+
 		$('.owl-testimonials').owlCarousel({
 			singleItem: true,
 			pagination: true
 		});
-		$('.owl-twitter').owlCarousel({
-			singleItem: true,
-			pagination: true
-		});
+		// $('.owl-twitter').owlCarousel({
+		// 	singleItem: true,
+		// 	pagination: true
+		// });
+
 
 		// Navbar Init
 		$('nav').addClass('original').clone().insertAfter('nav').addClass('navbar-fixed-top').css('position', 'fixed').css('top', '0').css('margin-top', '0').removeClass('original');
@@ -75,8 +87,11 @@ jQuery(function($) {
 			filter: ':not(.btn)'
 		});
 	});
+
+
 	// Window Scroll
 	function onScroll() {
+		// didScroll = true;
 		if ($(window).scrollTop() > 50) {
 			$('nav.original').css('opacity', '0');
 			$('nav.navbar-fixed-top').css('opacity', '1');
@@ -84,6 +99,8 @@ jQuery(function($) {
 			$('nav.original').css('opacity', '1');
 			$('nav.navbar-fixed-top').css('opacity', '0');
 		}
+
+
 	}
 
 	window.addEventListener('scroll', onScroll, false);
@@ -91,17 +108,10 @@ jQuery(function($) {
 	// Window Resize
 	$(window).resize(function() {
 		$('header').height($(window).height());
+		resetCut();
 	});
 
-	// Pricing Box Click Event
-	$('.pricing .box-main').click(function() {
-		$('.pricing .box-main').removeClass('active');
-		$('.pricing .box-second').removeClass('active');
-		$(this).addClass('active');
-		$(this).next($('.box-second')).addClass('active');
-		$('#pricing').css("background-image", "url(" + $(this).data('img') + ")");
-		$('#pricing').css("background-size", "cover");
-	});
+
 
 	// Mobile Nav
 	$('body').on('click', 'nav .navbar-toggle', function() {
@@ -181,116 +191,123 @@ particlesJS.load('particles-js', 'particles.json', function() {
 */
 
 /* Otherwise just put the config content (json): */
-
 particlesJS('particles-js',
-{
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 800
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 4
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "repulse"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
+
+  {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
         }
       },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
+      "color": {
+        "value": "#888"
       },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
       },
-      "push": {
-        "particles_nb": 4
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
       },
-      "remove": {
-        "particles_nb": 2
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#777",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
       }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
     }
-  },
-  "retina_detect": true
-}
+  }
+
 );

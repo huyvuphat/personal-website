@@ -34,6 +34,9 @@
 	<!-- Main style -->
 	<link rel="stylesheet" type="text/css" href="css/cardio.css">
 	<link rel="stylesheet" type="text/css" href="css/animated-homescreen.css">
+	<link rel="stylesheet" type="text/css" href="css/about-me.css">
+
+	<link rel="stylesheet" type="text/css" href="css/work-sample.css">
 
 </head>
 <body>
@@ -44,7 +47,7 @@
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -54,11 +57,12 @@
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right main-nav">
+				<ul class="nav navbar-nav navbar-right main-nav title-mainbar">
 					<li><a href="#intro">Intro</a></li>
 					<li><a href="#skills">About me</a></li>
 					<li><a href="#work">My Work</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#samples">My Portfolios</a></li>
+					<!-- <li><a href="#contact">Contact</a></li> -->
 					<!-- <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li> -->
 				</ul>
 			</div>
@@ -87,11 +91,12 @@
  		</div>
 	</header>
 
-	<section>
-		<div class="cut-top"></div>
+	<section id="skills" class="gray-bg">
+		<div class="cut-top gray-border-right"></div>
 		<div class="container">
 			<div class="row intro-tables">
-				<div class="col-md-4">
+				<div class="col-md-4 ">
+					<div class="intro-table-wrapper">
 					<div class="intro-table intro-table-first">
 						<h5 class="white heading">My Favorite Quotes</h5>
 						<div class="owl-testimonials bottom">
@@ -109,8 +114,10 @@
 							</div>
 						</div>
 					</div>
+					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 ">
+					<div class="intro-table-wrapper">
 					<div class="intro-table intro-table-second">
 						<h5 class="white heading">My Strengths</h5>
 						<div class="owl-testimonials bottom">
@@ -141,7 +148,9 @@
 
 					</div>
 				</div>
+			</div>
 				<div class="col-md-4">
+					<div class="intro-table-wrapper">
 					<div class="intro-table intro-table-third">
 						<h5 class="white heading">What Motivates Me</h5>
 						<div class="owl-testimonials bottom">
@@ -169,56 +178,73 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section id="skills" class="section">
-		<div class="container">
-			<div class="row text-center title">
-				<h2>About me</h2>
-				<br></br/>
-				<h4 class="light muted">My background in web development originated from building websites. I started to create my first website for my uncle’s clinic and the website got around 8000 views per month! I've got several internships where I worked with Ruby on Rails, NodeJS, and .NET frameworks. Currently, I'm also working on a research paper about using Machine Learning to predict the sediment transport along the coastline </h4>
-			</div>
-			<div class="row services">
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<!-- <img src="img/icons/heart-blue.png" alt="" class="icon"> -->
-							<i class="fa  fa-code fa-custom" aria-hidden="true"></i>
-						</div>
-						<h4 class="heading">Languages I know </h4>
-						<p class="description">Java, Python, C/C++, Ruby, JavaScript, Swift, Python, C#, Visual Basic, Minitab, HTML, HAML, CSS, and SASS</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<!-- <img src="img/icons/guru-blue.png" alt="" class="icon"> -->
-							<i class="fa fa-html5 fa-custom" aria-hidden="true"></i>
-						</div>
-						<h4 class="heading">Frameworks I works with </h4>
-						<p class="description">.Net MVC, Ruby on Rails, Express.js, Node.js, Next.js, React.js, Kendo UI, Tensorflow</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="service">
-						<div class="icon-holder">
-							<!-- <img src="img/icons/weight-blue.png" alt="" class="icon"> -->
-							<i class="fa fa-database fa-custom" aria-hidden="true"></i>
-						</div>
-						<h4 class="heading">Query Languages I use </h4>
-						<p class="description">Oracle, T-SQL, PostgreSQL, Firebase, MongoDB</p>
-					</div>
 				</div>
 			</div>
 		</div>
-		<div class="cut cut-bottom"></div>
+		<br />
+		<br/>
+
+		<div class="cut-wrapper">
+
+			<div class="cut cut-bottom gray-border-left"></div>
+		</div>
+ 	</section>
+	<section  class="section ">
+ 		<div class="container ">
+			<div class="row title">
+				<img class="skills-bg" src="img/coder.svg" alt="Coder Image"  />
+				<div class="col-md-7">
+					<div class="row title">
+						<h1 class="padding-sm-left">About Me</h1>
+ 						<h4 class="light muted light-white-bg padding-sm">My background in web development originated from building websites. I started to create my first website for my uncle’s clinic and the website got around 8000 views per month!  <br />  <br />
+							 I've got several internships where I learned with Ruby on Rails, NodeJS, and .NET frameworks. Currently, I'm writing a research paper about predicting the sediment transport along the coastline using Machine Learning </h4>
+					</div>
+				</div>
+
+
+		</div>
+		<div class="row services">
+			<div class="col-md-4">
+				<div class="service">
+					<div class="icon-holder">
+						<!-- <img src="img/icons/heart-blue.png" alt="" class="icon"> -->
+						<i class="fa  fa-code fa-custom" aria-hidden="true"></i>
+					</div>
+					<h4 class="heading">Languages I know </h4>
+					<p class="description">Java, Python, C/C++, Ruby, JavaScript, Swift, Python, C#, Visual Basic, Minitab, HTML, HAML, CSS, and SASS</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="service">
+					<div class="icon-holder">
+						<!-- <img src="img/icons/guru-blue.png" alt="" class="icon"> -->
+						<i class="fa fa-html5 fa-custom" aria-hidden="true"></i>
+					</div>
+					<h4 class="heading">Frameworks I works with </h4>
+					<p class="description">.Net MVC, Ruby on Rails, Express.js, Node.js, Next.js, React.js, Kendo UI, Tensorflow</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="service">
+					<div class="icon-holder">
+						<!-- <img src="img/icons/weight-blue.png" alt="" class="icon"> -->
+						<i class="fa fa-database fa-custom" aria-hidden="true"></i>
+					</div>
+					<h4 class="heading">Query Languages I use </h4>
+					<p class="description">Oracle, T-SQL, PostgreSQL, Firebase, MongoDB</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cut-wrapper">
+			<div class="cut cut-bottom gray-bg  "></div>
+	</div>
+
 	</section>
 	<section id="work" class="section gray-bg">
 		<div class="container">
 			<div class="row title text-center">
 				<h2 class="margin-top">My Work</h2>
-				<!-- <h4 class="light muted"></h4> -->
 			</div>
 			<div class="row">
 				<div class="col-md-12">
@@ -271,15 +297,14 @@
  							</p>
  						</h5>
  						</div>
- 						<br />
- 						<button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">My Thoughts</button>
+  						<!-- <button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">My Thoughts</button> -->
  					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="my-work ">
  						<div class="title">
  							<h3 class"text-center">Software Development Intern, Flow Digital  </h3>
- 							<h5><em>June 2018 – August 2¬¬¬018</em></h5>
+ 							<h5><em>June 2018 – August 2018</em></h5>
 							<hr />
   							<h5 class="muted regular">
  								<p>
@@ -296,15 +321,14 @@
 							</p>
  						</h5>
  						</div>
- 						<br />
- 						<button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">My Thoughts</button>
+  						<!-- <button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">My Thoughts</button> -->
  					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="my-work ">
 						<div class="title">
 							<h3 class"text-center">Front-End Web Developer  </h3>
-							<h5><em>June 2018 – August 2¬¬¬018</em></h5>
+							<h5><em>June 2018 – August 2018</em></h5>
 							<hr />
 								<h5 class="muted regular">
 								<p>
@@ -316,83 +340,81 @@
 
 						</h5>
 						</div>
-						<br />
-						<button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">My Thoughts</button>
+ 						<!-- <button data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill">My Thoughts</button> -->
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="cut-wrapper">
+			<div class="cut cut-bottom   gray-border-left"></div>
+		</div>
 	</section>
-	<section id="pricing" class="section">
+	<section id="samples" class="section cardboard">
 		<div class="container">
 			<div class="row title text-center">
-				<h2 class="margin-top white">Pricing</h2>
-				<h4 class="light white">Choose your favorite pricing plan and sign up today!</h4>
+				<h1 class="margin-top">My Portfolios</h1>
+				<br />
 			</div>
-			<div class="row no-margin">
-				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
-					<div class="pricing">
-						<div class="box-main active" data-img="img/pricing1.jpg">
-							<h4 class="white">Yoga Pilates</h4>
-							<h4 class="white regular light">$850.00 <span class="small-font">/ year</span></h4>
-							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
-							<i class="info-icon icon_question"></i>
-						</div>
-						<div class="box-second active">
-							<ul class="white-list text-left">
-								<li>One Personal Trainer</li>
-								<li>Big gym space for training</li>
-								<li>Free tools &amp; props</li>
-								<li>Free locker</li>
-								<li>Free before / after shower</li>
-							</ul>
-						</div>
-					</div>
-					<div class="pricing">
-						<div class="box-main" data-img="img/pricing2.jpg">
-							<h4 class="white">Cardio Training</h4>
-							<h4 class="white regular light">$100.00 <span class="small-font">/ year</span></h4>
-							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
-							<i class="info-icon icon_question"></i>
-						</div>
-						<div class="box-second">
-							<ul class="white-list text-left">
-								<li>One Personal Trainer</li>
-								<li>Big gym space for training</li>
-								<li>Free tools &amp; props</li>
-								<li>Free locker</li>
-								<li>Free before / after shower</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section  blue-bg">
-		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="owl-twitter owl-carousel">
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
-						</div>
-						<div class="item text-center">
-							<i class="icon fa fa-twitter"></i>
-							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
-							<h4 class="light-white light">#health #training #exercise</h4>
+ 		 <div class="col-sm-4">
+ 			 <div class="item-wrapper">
+						 <img src="img/oyster.png" alt="">
+ 						 <div class="text-content">
+ 							 <h4>Oyster Sentinel</h4>
+ 							 <p>A Content Management System (CMS) website I built using Ruby on Rails, Haml, and Sass.</p>
+ 							  <a href="https://oystersentinel.tk/">Discover More  <i class="fa fa-external-link"></i></a>
+ 						 </div>
+  			 </div>
+		 </div>
+		 <div class="col-sm-4">
+ 			 <div class="item-wrapper">
+				 <iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://unola.maps.arcgis.com/apps/Embed/index.html?webmap=b2bced03fbb047a09116ec324d8c53e0&amp;extent=-91.6058,28.8606,-88.4033,30.4573&amp;zoom=true&amp;previewImage=false&amp;scale=true&amp;legendlayers=true&amp;disable_scroll=true&amp;theme=light" title="HSI_2017"></iframe>
+ 				 <div class="text-content">
+					 <h4>Habitat Suitability Index</h4>
+					 <p>To create this visualization, I worked with geographical layers and color mapping using ArcGis.</p>
+					 <div class="primary-button">
+						 <a href="https://oystersentinel.tk/hsi-visual">Discover More  <i class="fa fa-external-link"></i></a>
+					 </div>
+				 </div>
+
+		 	</div>
+ 		</div>
+		 <div class="col-sm-4">
+				 <div class="item-wrapper">
+
+	 						 <img src="img/robotics.png" alt="University of New Orleans Robotics Club">
+	 						 <div class="text-content">
+	 							 <h4>University of New Orleans Robotics Club</h4>
+	 							 <p>A Content Management System (CMS) website I built using Ruby on Rails, Haml, and Sass.</p>
+	 							 <div class="primary-button">
+	 								 <a href="https://unorobotics.herokuapp.com/">Discover More  <i class="fa fa-external-link"></i></a>
+	 							 </div>
+
+	 				 </div>
+				 </div>
+			 </div>
+
+
+ 				 </div>
+				 <div class="row">
+					 <div class="col-sm-4">
+							 <div class="item-wrapper">
+										 <img src="img/lotus.png" alt="Lotus Acupuncture Clinic Website">
+										 <div class="text-content">
+											 <h4>Lotus Acupuncture Clinic</h4>
+											 <p>My first website I worked with! I used HTML, CSS, JavaScript, JQuery, and Bootstrap.</p>
+											 <div class="primary-button">
+												 <a href="https://www.lotusacupuncture-clinic.com/">Discover More  <i class="fa fa-external-link"></i> </a>
+											 </div>
+										 </div>
+
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+				 </div>
+ 			 </div>
+ 		 </div>
+	 </div>
+
 	</section>
 	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -401,35 +423,13 @@
 				<h4 class="white regular">
 					My internship is a captivating opportunity to expand my knowledge of software development and expose me to the professional working environment. I receive helpful advice from my mentor and work with experienced coworkers who motivate me to learn at a fast pace.
 				</h4>
-				<!-- <h3 class="white">Sign Up</h3>
-				<form action="" class="popup-form">
-					<input type="text" class="form-control form-white" placeholder="Full Name">
-					<input type="text" class="form-control form-white" placeholder="Email Address">
-					<div class="dropdown">
-						<button id="dLabel" class="form-control form-white dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Pricing Plan
-						</button>
-						<ul class="dropdown-menu animated fadeIn" role="menu" aria-labelledby="dLabel">
-							<li class="animated lightSpeedIn"><a href="#">1 month membership ($150)</a></li>
-							<li class="animated lightSpeedIn"><a href="#">3 month membership ($350)</a></li>
-							<li class="animated lightSpeedIn"><a href="#">1 year membership ($1000)</a></li>
-							<li class="animated lightSpeedIn"><a href="#">Free trial class</a></li>
-						</ul>
-					</div>
-					<div class="checkbox-holder text-left">
-						<div class="checkbox">
-							<input type="checkbox" value="None" id="squaredOne" name="check" />
-							<label for="squaredOne"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
-						</div>
-					</div>
-					<button type="submit" class="btn btn-submit">Submit</button>
-				</form> -->
+
 			</div>
 		</div>
 	</div>
 	<footer>
 		<div class="container">
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-sm-6 text-center-mobile">
 					<h3 class="white">Reserve a Free Trial Class!</h3>
 					<h5 class="light regular light-white">Shape your body and improve your health.</h5>
@@ -448,20 +448,23 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="row bottom-footer text-center-mobile">
 				<div class="col-sm-8">
-					<p>&copy; 2015 All Rights Reserved. Powered by <a href="http://www.phir.co/">PHIr</a> exclusively for <a href="http://tympanus.net/codrops/">Codrops</a></p>
+					<p>&copy; 2019 All Rights Reserved. Designed by Huy Phat Vu</p>
 				</div>
 				<div class="col-sm-4 text-right text-center-mobile">
 					<ul class="social-footer">
-						<li><a href="http://www.facebook.com/pages/Codrops/159107397912"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="http://www.twitter.com/codrops"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://plus.google.com/101095823814290637419"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="https://www.facebook.com/profile.php?id=100008165958522"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/huy-vu-a58414149/"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/huyvuphat"><i class="fa fa-github"></i></a></li>
 					</ul>
 				</div>
 			</div>
+			<a href="http://www.freepik.com">Vector Image Designed by Freepik</a>
+
 		</div>
+
 	</footer>
 	<!-- Holder for mobile navigation -->
 	<div class="mobile-nav">

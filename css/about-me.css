@@ -1,0 +1,30 @@
+/* Image */
+.skills-bg{
+  width: 48%;
+  height: 56%;
+  position: absolute;
+  left: 58%;
+  bottom: 58%;
+}
+
+
+@media(max-width:1330px) {
+  .skills-bg{
+    width: 40%;
+  }
+}
+@media (max-width: 991px){
+  .skills-bg {
+      left: 60%;
+      bottom: 71%;
+  }
+
+}
+
+.padding-sm-left{
+  padding-left: 0.2em
+}
+
+.padding-sm{
+	padding: 1.3em 0.2em  ;
+}
