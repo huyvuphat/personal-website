@@ -302,7 +302,10 @@ section {
 	background: #fff;
 }
 
-
+#intro{
+	width: 100vw;
+	overflow: hidden;
+}
 
 .section-padded {
 	padding: 140px 0 40px;
@@ -717,7 +720,7 @@ footer {
 	padding: 40px 0 40px;
 	background:  #2f3046;
 	/* background: url('../img/footer.jpg'); */
- 
+
 }
 
 footer .trial-button {
