@@ -279,8 +279,8 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	top: 50px;
 
 }
-nav.navbar{
-	padding: 0.9em;
+nav.navbar {
+    padding: 0em 0.9em;
 }
 
 .container {
