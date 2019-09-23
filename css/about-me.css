@@ -1,24 +1,22 @@
 /* Image */
-.skills-bg{
-  width: 48%;
-  height: 56%;
-  position: absolute;
-  left: 58%;
-  bottom: 58%;
-}
-
-
-@media(max-width:1330px) {
-  .skills-bg{
+.skills-bg {
     width: 40%;
-  }
+    /* height: 56%; */
+    position: absolute;
+    right: 0%;
+    top: -120px;
+    z-index: 0;
 }
-@media (max-width: 991px){
-  .skills-bg {
-      left: 60%;
-      bottom: 71%;
-  }
 
+
+
+
+@media (max-width: 991px){
+
+   .skills-bg {
+      right: 5%;
+       top: -80px;
+    }
 }
 
 .padding-sm-left{

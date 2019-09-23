@@ -47,3 +47,5 @@ Use it freely but please do not republish, distribute or sell "as-is". [Read mor
 Other images from [Pixabay](https://pixabay.com/)
 
 Vector Image Designed by Freepik [Pixabay](http://www.freepik.com)
+
+Background vector created by [freepik](https://www.freepik.com/free-photos-vectors/background)
