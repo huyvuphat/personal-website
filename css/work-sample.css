@@ -23,6 +23,11 @@
   width: 100%;
   min-height: 40%;
 }
-.item-wrapper .text-content{
-  min-height: 14vw;
+
+
+@media (min-width: 991px){
+   .cardboard .item-wrapper  {
+    height: 425px;
+  }
+
 }
