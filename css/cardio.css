@@ -915,6 +915,10 @@ footer .social-footer li:hover a {
 	margin: 25px 0;
 }
 
+.mobile-nav a {
+    font-size: 2.2em;
+}
+
 .mobile-nav ul li a:not(.btn) {
 	color: #aaa;
 }
