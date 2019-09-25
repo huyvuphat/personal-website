@@ -26,7 +26,7 @@
 }
 .peronal-card {
     padding: 0;
-    border-radius: 90px;
+    border-radius: 64px;
     overflow: hidden;
     position: relative;
     /* margin: 40px 0; */
@@ -56,9 +56,21 @@
   margin-right: 20px;
 }
 
+/* // Small devices (landscape phones, 576px and down) */
 
+@media (max-width: 576px) {
+  .personal-img{
+    height:  60%;
+  }
+  .peronal-card h4{
+    padding-bottom: 20px;
+  }
+  .peronal-card {
+       border-radius: 40px;
+    }
+}
+/* // Large devices (desktops, 992px and up) */
 
-/* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 992px) {
   .personal-img-wrapper{
     height: 200px;
